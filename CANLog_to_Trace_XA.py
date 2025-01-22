@@ -39,8 +39,10 @@ def convert_to_trc(file_path):
             first_timestamp = None
 
             for line in infile:
+                print(f"Processing line: {line.strip()}")  # Debugging line
                 parts = line.strip().split()
                 if len(parts) < 3 or '#' not in parts[2]:
+                    print(f"Skipping line: {line.strip()}")  # Reason for skipping
                     continue
 
                 try:
