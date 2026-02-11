@@ -58,7 +58,7 @@ def convert_to_trc(file_path):
 
                     # Write the formatted line to the output file
                     outfile.write(
-                        f"{str(message_number).rjust(8)}      {relative_time:8.3f} DT {bus[-1]}  {can_id} Rx -  {data_length:<4} {data}\n"
+                        f"{str(message_number).rjust(8)}      {relative_time:8.3f} DT {"1"}  {can_id} Rx -  {data_length:<4} {data}\n"
                     )
                     message_number += 1
                 except Exception as e:
